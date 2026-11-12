@@ -1,7 +1,10 @@
-const CACHE_NAME = 'reflexduel-v1';
+const CACHE_NAME = 'reflexduel-v3';
 const CORE_ASSETS = [
   './',
   './index.html',
+  './cps-test.html',
+  './spacebar-test.html',
+  './aim-reflex.html',
   './styles.css',
   './app.js',
   './site.webmanifest',
@@ -13,7 +16,7 @@ const CORE_ASSETS = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)).catch(() => {})
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)).catch(() => { })
   );
   self.skipWaiting();
 });
@@ -38,19 +41,29 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Network-First Strategy: always serve fresh code on first visit, fallback offline
+  // Network-First Strategy with offline support for ?duel= query strings and cleanUrls
   event.respondWith(
     fetch(request)
       .then((networkResponse) => {
         if (networkResponse && networkResponse.status === 200) {
           const clone = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone)).catch(() => {});
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone)).catch(() => { });
         }
         return networkResponse;
       })
-      .catch(() =>
-        caches.match(request).then((cached) => cached || (request.mode === 'navigate' ? caches.match('./index.html') : undefined))
-      )
+      .catch(async () => {
+        const directMatch = await caches.match(request, { ignoreSearch: true });
+        if (directMatch) return directMatch;
+
+        if (request.mode === 'navigate') {
+          const cleanPath = url.pathname.replace(/\/+$/, '');
+          if (cleanPath && !cleanPath.endsWith('.html')) {
+            const htmlMatch = await caches.match(`.${cleanPath}.html`, { ignoreSearch: true });
+            if (htmlMatch) return htmlMatch;
+          }
+          return caches.match('./index.html');
+        }
+        return undefined;
+      })
   );
 });
-

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="S7rZ92XMf3c_kQliI7A_g4i2APwAkF-cC-5eMh1wmI8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MPF56DFZ"></script>
+  <meta name="google-adsense-account" content="ca-pub-0000000000000000" />
+
+  <title>Spacebar Speed Test ⌨️ — 5s &amp; 10s Spacebar Counter Challenge | ReflexDuel</title>
+  <meta name="description"
+    content="How fast can you smash your Spacebar? Take the 5-second and 10-second Spacebar CPS challenge with instant switch timing, global rank tiers, and QR Story PNG export." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B0D10" />
+  <link rel="canonical" href="https://reflexduel.vercel.app/spacebar-test" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ReflexDuel" />
+  <meta property="og:url" content="https://reflexduel.vercel.app/spacebar-test" />
+  <meta property="og:title" content="ReflexDuel Spacebar Test ⌨️ — Beat My Spacebar Score" />
+  <meta property="og:description"
+    content="Test your Spacebar actuation rate over 5 or 10 seconds. Challenge friends with zero-server ?duel= links." />
+  <meta property="og:image" content="https://reflexduel.vercel.app/assets/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReflexDuel Spacebar Speed Counter ⌨️" />
+  <meta name="twitter:description"
+    content="Measure your mechanical keyboard Spacebar hits per second cleanly in browser." />
+  <meta name="twitter:image" content="https://reflexduel.vercel.app/assets/og-preview.png" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ReflexDuel Spacebar Speed Counter",
+    "url": "https://reflexduel.vercel.app/spacebar-test",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript and HTML5",
+    "description": "High-precision 5-second and 10-second Spacebar speed counter measuring keyboard hits per second with zero key-repeat pollution.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does holding down the Spacebar count extra hits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. ReflexDuel filters out OS key-repeat events (e.repeat) so only authentic physical downward key actuations increment the Spacebar counter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good 5-second Spacebar CPS score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Casual single-thumb Spacebar tapping scores between 5.0 and 7.0 CPS. Alternating two thumbs or index fingers pushes scores past 10.0 to 14.0 CPS cleanly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Rapid Trigger Hall-Effect keyboards faster on Spacebar tests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Magnetic Hall-Effect switches reset cleanly the millimeter your thumb lifts, eliminating full 2 mm mechanical reset travel and lifting Spacebar hits per second substantially."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I take the Spacebar challenge on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Mobile users can rapidly double-thumb tap anywhere on the giant emerald-green arena pad without screen scrolling or accidental pinch-zoom."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is the Spacebar physically slower than a mouse micro-switch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Long 6.25u Spacebar keycaps distribute force across stabilizers and heavier leaf springs over 3.5–4.0 mm of travel, compared to short 0.5 mm Omron or optical mouse clicks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I safely challenge a friend to beat my Spacebar score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter your gamer tag below the pad and hit WhatsApp Duel, Copy Link, or export the 9:16 PNG card with a scannable QR duel token."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body data-default-mode="spacebar">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPF56DFZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <main class="main-stage" id="mainStage">
+    <header class="site-header">
+      <a href="./" class="brand-logo" id="brandResetLink" aria-label="ReflexDuel Home Reset">
+        <img src="assets/favicon.svg" alt="" width="24" height="24" class="brand-icon" />
+        <span class="brand-wordmark">ReflexDuel<span class="brand-bolt" aria-hidden="true">⚡</span></span>
+      </a>
+      <div class="social-proof-badge" aria-live="off">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span id="streakBadgeText">🔥 0d Streak • 0 Today</span>
+      </div>
+    </header>
+
+    <div class="challenge-banner hidden" id="challengeBanner" role="status" aria-live="polite"></div>
+
+    <nav class="mode-switcher is-3" role="tablist" aria-label="Spacebar Arena Modes">
+      <button type="button" class="mode-tab is-active" role="tab" aria-selected="true" data-mode="spacebar">
+        <span aria-hidden="true">⌨️</span>
+        <span>Spacebar</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabCps" role="tab" aria-selected="false" data-mode="cps">
+        <span aria-hidden="true">🖱️</span>
+        <span>CPS Burst</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabReflex" role="tab" aria-selected="false" data-mode="reflex">
+        <span aria-hidden="true">⚡</span>
+        <span>Reaction (ms)</span>
+      </button>
+    </nav>
+
+    <div class="subbar-row" id="subbarRow">
+      <div class="variant-pills" id="variantPills" role="group" aria-label="Spacebar Duration"></div>
+      <div class="history-strip" id="historyStrip" aria-label="Recent Attempts"></div>
+      <button type="button" class="sfx-toggle-btn is-on" id="sfxToggleBtn" aria-pressed="true"
+        title="Toggle Web Audio sound effects">
+        <span aria-hidden="true">🔊</span>
+        <span>SFX On</span>
+      </button>
+    </div>
+
+    <div class="arena-pad state-idle" id="arenaPad" role="button" tabindex="0"
+      aria-label="Interactive Spacebar Speed Counter Pad. Press Spacebar or tap to start.">
+      <div class="ripple-layer" id="rippleLayer" aria-hidden="true"></div>
+      <div class="pad-aura" aria-hidden="true"></div>
+
+      <div class="pad-live-view" id="padLiveView">
+        <div class="pad-meta-row" id="padMetaRow">
+          <span class="meta-pill" id="padModePill">5-SEC SPACEBAR</span>
+          <span class="meta-pill meta-pill-pb hidden" id="padPbPill">PB: --</span>
+        </div>
+
+        <div class="pad-hero-center">
+          <div class="best-of-dots hidden" id="bestOfDots" aria-hidden="true">
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+          </div>
+          <div class="cps-counter hidden" id="cpsLiveCounter">0</div>
+          <h1 class="pad-title" id="padTitle">⌨️ Press Spacebar to Start</h1>
+          <p class="pad-subtitle" id="padSubtitle">Hit Spacebar (or tap on mobile) for 5.0 seconds as fast as possible!</p>
+        </div>
+
+        <div class="pad-footer-row">
+          <span class="pad-hint" id="padHint">First Spacebar press starts the timer</span>
+        </div>
+      </div>
+
+      <div class="pad-result-view hidden" id="padResultView">
+        <div class="rank-badge" id="rankBadge">🏆 TOP 8% • SWEATY PVPER</div>
+        <div class="score-display" id="scoreDisplay">9.2 CPS</div>
+        <p class="score-comparison" id="scoreComparisonText">46 total hits in 5.0 seconds!</p>
+        <span class="retry-prompt" id="retryPrompt">↻ Press Spacebar or tap to retry</span>
+      </div>
+    </div>
+
+    <section class="share-card" id="shareCard" aria-label="Challenge and Share">
+      <div class="input-wrapper">
+        <label class="sr-only" for="playerNameInput">Your Name or Gamer Tag</label>
+        <input type="text" id="playerNameInput" class="player-name-input" maxlength="20" autocomplete="nickname"
+          placeholder="Your Name / Gamer Tag (e.g. Alex)" />
+      </div>
+
+      <button type="button" class="btn-whatsapp" id="whatsappDuelBtn">
+        <span>⚔️ Challenge a Friend on WhatsApp</span>
+      </button>
+
+      <div class="secondary-btn-row is-3">
+        <button type="button" class="btn-secondary" id="copyDuelLinkBtn">
+          <span>📋 Copy Link</span>
+        </button>
+        <button type="button" class="btn-secondary" id="downloadCardBtn">
+          <span>📸 9:16 PNG</span>
+        </button>
+        <button type="button" class="btn-secondary" id="nativeShareBtn">
+          <span>📤 Share Card</span>
+        </button>
+      </div>
+
+      <p class="share-feedback hidden" id="shareFeedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <div class="below-fold-hub">
+    <aside class="ad-wrapper ad-leaderboard-wrap" id="ad-slot-leaderboard" data-ad-status="pending" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-leaderboard-box">
+        <span class="ad-placeholder">Google AdSense Responsive Leaderboard (728×90 / 320×100)</span>
+      </div>
+    </aside>
+
+    <article class="editorial-article">
+      <section class="editorial-section">
+        <span class="eyebrow">KEYBOARD SWITCH TELEMETRY</span>
+        <h2>Spacebar Speed Test Benchmarks: Mechanical vs Rapid Trigger Switches</h2>
+        <p>
+          The <strong>Spacebar Speed Test</strong> measures how quickly you can physically actuate and release the largest
+          stabilized key on your keyboard over 5-second or 10-second sprints. Unlike naive counters that accidentally allow
+          operating-system key repeat to inflate totals when held, ReflexDuel enforces <code>if (e.repeat) return;</code>
+          so every single point reflects an authentic physical downstroke.
+        </p>
+        <p>
+          Keyboard enthusiasts use Spacebar counters to compare switch bottom-out crispness, test stabilizer rattle recovery
+          speed, and benchmark newer Hall-Effect Rapid Trigger actuation heights against classic Cherry MX Red, Brown, and
+          laptop scissor membranes.
+        </p>
+
+        <div class="table-container">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>Switch Technology</th>
+                <th>Reset Mechanism</th>
+                <th>Avg Spacebar Speed</th>
+                <th>Rating Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hall-Effect (Rapid Trigger)</strong></td>
+                <td>Dynamic 0.1 mm lift</td>
+                <td class="mono emerald">11.0 – 16.0 CPS</td>
+                <td>Fastest reset &amp; minimal finger lift</td>
+              </tr>
+              <tr>
+                <td><strong>Linear Mechanical (45g)</strong></td>
+                <td>2.0 mm fixed actuation</td>
+                <td class="mono amber">8.5 – 12.0 CPS</td>
+                <td>Consistent bounce, great two-thumb flow</td>
+              </tr>
+              <tr>
+                <td><strong>Tactile / Clicky</strong></td>
+                <td>Feedback bump / click bar</td>
+                <td class="mono">7.0 – 9.8 CPS</td>
+                <td>Audible cue but slower hysteresis</td>
+              </tr>
+              <tr>
+                <td><strong>Standard Laptop Membrane</strong></td>
+                <td>Rubber dome collapse</td>
+                <td class="mono muted">5.5 – 8.0 CPS</td>
+                <td>Soft bottom-out limits long 10s pace</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 14px;">
+          Because a standard full-size 6.25u Spacebar weighs five to eight times more than a primary mouse button, spring
+          rebound stiffness and stabilizer wire lubrication dramatically shape peak rhythm speeds. Under-lubed or ticking
+          stabilizers create uneven vertical wobble during rapid 5-second and 10-second sprints, costing players up to 2.5
+          hits per second. Conversely, light linear switches (35g to 45g) paired with balanced clip-in stabilizers let
+          thumbs rebound rapidly right at the 2.0 mm actuation point without bottoming out heavily on every stroke.
+        </p>
+      </section>
+
+      <section class="editorial-section">
+        <span class="eyebrow">ZERO-CHEAT FAIRNESS ENGINE</span>
+        <h2>Why Operating-System Key Repeat Skew &amp; Switch Scan Latency Matter</h2>
+        <p>
+          Many legacy browser Spacebar counters contain a classic timing flaw: simply pressing and holding down the
+          Spacebar causes Windows or macOS keyboard accessibility drivers to emit automatic <code>keydown</code> repeat
+          events every 30 milliseconds, artificially displaying 30+ CPS with zero effort. ReflexDuel explicitly blocks
+          held-key repeats cleanly via <code>e.repeat</code> detection, certifying that every point recorded on your score
+          card or shared <code>?duel=</code> challenge reflects genuine upward-and-downward mechanical switch actuation.
+        </p>
+        <p>
+          Additionally, keyboard USB matrix scan intervals vary substantially across devices. Entry-level wireless office
+          keyboards frequently coalesce key events at 125 Hz (creating 8 ms quantization steps), while wired esports boards
+          running at 1000 Hz to 8000 Hz capture sub-millisecond finger alternation accurately. Switching cleanly between
+          5-second sprint duels and 10-second endurance tests lets you evaluate whether your switch springs tire out your
+          flexors or sustain rhythmic thumb-alternation cadence cleanly through every ranked warm-up set.
+        </p>
+      </section>
+
+      <aside class="ad-wrapper ad-rectangle-wrap" id="ad-slot-rectangle" data-ad-status="pending" aria-label="Advertisement">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-box ad-rectangle-box">
+          <span class="ad-placeholder">Google AdSense In-Article Rectangle (336×280 / 300×250)</span>
+        </div>
+      </aside>
+
+      <section class="editorial-section">
+        <span class="eyebrow">SPEED TECHNIQUE</span>
+        <h2>How to Hit 12+ Spacebar Hits Per Second Cleanly</h2>
+        <p>
+          Most players default to a heavy single right-thumb smash that tires out before three seconds elapse. Borrow the
+          alternating rhythm technique from piano and rhythm games to unlock immediate Spacebar speed gains cleanly.
+        </p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Alternating Two-Thumb Bounce</h3>
+            <p>
+              Hover both thumbs symmetrically above the center stabilizer bar. Strike lightly with left then right in crisp
+              alternation—halving the frequency each individual thumb must achieve.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Index-Middle Tap Drill</h3>
+            <p>
+              When testing maximum raw Spacebar speed on desktop, sit squarely above the keyboard and alternate index and
+              middle fingers vertically over the center switch mount for zero stabilizer twist.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Strike Near Stabilizer Center</h3>
+            <p>
+              Pressing far corners of a 6.25u Spacebar introduces off-axis binding in cheaper wire stabilizers. Keeping your
+              strikes tight near the center stem minimizes friction drag.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Switch Polling Rate Matters</h3>
+            <p>
+              Budget office keyboards poll USB matrix scans at 125 Hz (8 ms step intervals). High-end 1000Hz to 8000Hz
+              keyboards capture ultra-rapid Spacebar hits cleanly with sub-millisecond timing separation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section faq-section" aria-labelledby="spaceFaqHeading">
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 id="spaceFaqHeading">Spacebar Speed Test FAQ</h2>
+        <div class="faq-list">
+          <details class="faq-details">
+            <summary>Does holding the Spacebar down register fake hits?</summary>
+            <p>
+              Never. Our keyboard handler ignores operating-system repeat events so only genuine physical key releases and
+              new downward presses are tallied.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>What is an above-average Spacebar CPS score?</summary>
+            <p>
+              Hitting 8.0+ CPS over 5 seconds puts you ahead of most casual typists. Breaking 11.0+ CPS places you into the
+              Top 8% esports keyboard speed tier.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Why do Rapid Trigger keyboards dominate Spacebar speed tests?</summary>
+            <p>
+              Rapid Trigger dynamically resets the actuation threshold the moment the key travels upward even 0.1 mm, saving
+              precious milliseconds on every rebound stroke.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Can I run the Spacebar challenge on a smartphone?</summary>
+            <p>
+              Yes—tapping anywhere inside the arena pad registers identically to Spacebar strikes, letting phone players
+              duel desktop keyboard users directly.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Why is my Spacebar slower than my mouse left-click CPS?</summary>
+            <p>
+              Mouse switches require only 0.4–0.6 mm pre-travel and minimal spring mass, while Spacebars move bulky stabilized
+              keycaps across a much longer 3.5–4.0 mm stem path.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>How do I challenge friends to a 1v1 Spacebar duel?</summary>
+            <p>
+              Finish either a 5s or 10s run, type your gamer tag, and share the generated <code>?duel=</code> link or 9:16
+              Story PNG with embedded QR code.
+            </p>
+          </details>
+        </div>
+      </section>
+    </article>
+
+    <section class="silo-links-card" aria-label="More Reflex &amp; Speed Arenas">
+      <h3>More Zero-Lag Speed Arenas</h3>
+      <div class="silo-grid">
+        <a href="./" class="silo-pill-link">
+          <strong>⚡ Reaction Time Test</strong>
+          <span>1-Tap, Best of 5 &amp; Sound Reflex</span>
+        </a>
+        <a href="cps-test.html" class="silo-pill-link">
+          <strong>🖱️ CPS Speed Test</strong>
+          <span>1s, 5s &amp; 10s Click Burst Timer</span>
+        </a>
+        <a href="spacebar-test.html" class="silo-pill-link is-current">
+          <strong>⌨️ Spacebar Counter</strong>
+          <span>5s &amp; 10s Keyboard Smash Test</span>
+        </a>
+        <a href="aim-reflex.html" class="silo-pill-link">
+          <strong>🎯 Aim Reflex Trainer</strong>
+          <span>10-Target Moving Dot Reaction</span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="ad-wrapper ad-multiplex-wrap" id="ad-slot-multiplex" data-ad-status="pending" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-multiplex-box">
+        <span class="ad-placeholder">Google AdSense Multiplex Recommendation Unit</span>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-brand-row">
+        <strong>ReflexDuel ⚡</strong>
+        <span>Global Millisecond Reaction Time &amp; CPS Challenge Arena</span>
+      </div>
+      <nav class="footer-nav" aria-label="Legal and Compliance">
+        <button type="button" class="footer-link-btn" data-legal-open="privacy">Privacy Policy</button>
+        <button type="button" class="footer-link-btn" data-legal-open="terms">Terms of Use</button>
+        <button type="button" class="footer-link-btn" data-legal-open="disclaimer">Disclaimer</button>
+        <button type="button" class="footer-link-btn" data-legal-open="contact">Contact / Report Abuse</button>
+      </nav>
+      <p class="footer-copy">© 2026 ReflexDuel. Client-side zero-backend arena.</p>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop hidden" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="legalModalTitle">Legal, Privacy &amp; Compliance</h2>
+        <button type="button" class="modal-close-btn" id="legalModalClose" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-tab-bar" role="tablist">
+        <button type="button" class="modal-tab-btn is-active" data-legal-tab="privacy" role="tab" aria-selected="true">Privacy Policy</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="terms" role="tab" aria-selected="false">Terms of Use</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="disclaimer" role="tab" aria-selected="false">Disclaimer</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="contact" role="tab" aria-selected="false">Contact / Report Abuse</button>
+      </div>
+      <div class="modal-content" id="legalModalBody"></div>
+    </div>
+  </div>
+
+  <div class="consent-banner hidden" id="consentBanner" role="region" aria-label="Cookie and Ad Consent">
+    <p class="consent-text">
+      ReflexDuel stores scores locally. Allow anonymized analytics &amp; AdSense cookies to keep this arena free.
+    </p>
+    <div class="consent-actions">
+      <button type="button" class="consent-btn consent-btn-reject" id="consentRejectBtn">Essential Only</button>
+      <button type="button" class="consent-btn consent-btn-accept" id="consentAcceptBtn">Accept All</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+

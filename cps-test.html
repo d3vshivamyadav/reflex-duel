@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="S7rZ92XMf3c_kQliI7A_g4i2APwAkF-cC-5eMh1wmI8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Google Consent Mode v2 Default (GDPR / AdSense Compliance) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+  </script>
+
+  <!-- Google Tag Manager (GTM) & GA4 DataLayer -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MPF56DFZ"></script>
+
+  <!-- Google AdSense Verification Meta -->
+  <meta name="google-adsense-account" content="ca-pub-0000000000000000" />
+
+  <title>CPS Test ⚡ — 1s, 5s &amp; 10s Clicks Per Second Challenge | ReflexDuel</title>
+  <meta name="description"
+    content="Test your clicking speed in 1-second, 5-second, and 10-second CPS bursts. Benchmark jitter, butterfly, and regular clicking with zero input lag and 1v1 duel links." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B0D10" />
+  <link rel="canonical" href="https://reflexduel.vercel.app/cps-test" />
+
+  <!-- OpenGraph & Twitter Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ReflexDuel" />
+  <meta property="og:url" content="https://reflexduel.vercel.app/cps-test" />
+  <meta property="og:title" content="ReflexDuel CPS Test ⚡ — Beat My Clicks Per Second Score" />
+  <meta property="og:description"
+    content="Measure your exact 1s, 5s, and 10s CPS burst with instant touch ripple feedback, global rank tiers, and QR Story cards." />
+  <meta property="og:image" content="https://reflexduel.vercel.app/assets/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReflexDuel CPS Test ⚡ — Clicks Per Second Arena" />
+  <meta name="twitter:description"
+    content="Zero-lag browser CPS speed test for Minecraft PvP, FPS, and mobile players." />
+  <meta name="twitter:image" content="https://reflexduel.vercel.app/assets/og-preview.png" />
+
+  <!-- Icons & PWA Manifest -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Google Fonts (&display=swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org WebApplication Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ReflexDuel CPS Speed Test",
+    "url": "https://reflexduel.vercel.app/cps-test",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript and HTML5",
+    "description": "Zero-lag 1-second, 5-second, and 10-second Clicks Per Second (CPS) counter with instant ripple feedback, global percentiles, and zero-server 1v1 duel challenges.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the average CPS score on a 5-second click speed test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average human single-finger click speed sits between 5.5 and 7.0 CPS over 5 seconds. Reaching 9.0 to 11.9 CPS ranks in the Top 8% competitive PvP bracket."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which CPS technique gives the highest score without cheating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Drag clicking can burst past 25+ CPS on high-friction matte mouse switches, while butterfly clicking reliably reaches 13 to 20 CPS cleanly during ranked Minecraft PvP duels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I train on the 1-second, 5-second, or 10-second CPS mode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use 1-second bursts to benchmark raw peak explosive finger speed, 5-second sprints as the universal global comparison standard, and 10-second runs to build wrist endurance without stamina drop-off."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does double-tapping a mobile screen score higher CPS than a laptop trackpad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Capacitive touchscreens require zero spring return travel, allowing two alternating thumbs or fingers to trigger consecutive pointerdown hits rapidly compared to deeper scissor-switch laptop trackpads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does mouse debounce time affect CPS tests?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gaming mice with adjustable debounce settings between 2 ms and 4 ms avoid blocking ultra-fast butterfly rebounds, whereas office mice locked at 20+ ms debounce intentionally suppress double activations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can jitter clicking cause wrist strain if done too often?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Tensing your forearm muscles repeatedly during jitter bursts increases tendon fatigue. Limit high-intensity bursts to short rounds and rest or stretch between sessions."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body data-default-mode="cps">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPF56DFZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <main class="main-stage" id="mainStage">
+    <!-- Minimal Zero-Button Header -->
+    <header class="site-header">
+      <a href="./" class="brand-logo" id="brandResetLink" aria-label="ReflexDuel Home Reset">
+        <img src="assets/favicon.svg" alt="" width="24" height="24" class="brand-icon" />
+        <span class="brand-wordmark">ReflexDuel<span class="brand-bolt" aria-hidden="true">⚡</span></span>
+      </a>
+      <div class="social-proof-badge" aria-live="off">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span id="streakBadgeText">🔥 0d Streak • 0 Today</span>
+      </div>
+    </header>
+
+    <div class="challenge-banner hidden" id="challengeBanner" role="status" aria-live="polite"></div>
+
+    <!-- 3-Tab Mode Switcher -->
+    <nav class="mode-switcher is-3" role="tablist" aria-label="CPS Arena Modes">
+      <button type="button" class="mode-tab is-active" id="tabCps" role="tab" aria-selected="true" data-mode="cps">
+        <span aria-hidden="true">🖱️</span>
+        <span>CPS Burst</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabReflex" role="tab" aria-selected="false" data-mode="reflex">
+        <span aria-hidden="true">⚡</span>
+        <span>Reaction (ms)</span>
+      </button>
+      <button type="button" class="mode-tab" role="tab" aria-selected="false" data-mode="spacebar">
+        <span aria-hidden="true">⌨️</span>
+        <span>Spacebar</span>
+      </button>
+    </nav>
+
+    <!-- Variant Switcher (1s | 5s | 10s), Recent Splits & Audio Toggle -->
+    <div class="subbar-row" id="subbarRow">
+      <div class="variant-pills" id="variantPills" role="group" aria-label="Burst Duration"></div>
+      <div class="history-strip" id="historyStrip" aria-label="Recent Attempts"></div>
+      <button type="button" class="sfx-toggle-btn is-on" id="sfxToggleBtn" aria-pressed="true"
+        title="Toggle Web Audio sound effects">
+        <span aria-hidden="true">🔊</span>
+        <span>SFX On</span>
+      </button>
+    </div>
+
+    <!-- Giant Interactive Arena Pad -->
+    <div class="arena-pad state-idle" id="arenaPad" role="button" tabindex="0"
+      aria-label="Interactive CPS Click Speed Test Pad. Tap anywhere to start.">
+      <div class="ripple-layer" id="rippleLayer" aria-hidden="true"></div>
+      <div class="pad-aura" aria-hidden="true"></div>
+
+      <div class="pad-live-view" id="padLiveView">
+        <div class="pad-meta-row" id="padMetaRow">
+          <span class="meta-pill" id="padModePill">5-SEC CPS BURST</span>
+          <span class="meta-pill meta-pill-pb hidden" id="padPbPill">PB: --</span>
+        </div>
+
+        <div class="pad-hero-center">
+          <div class="best-of-dots hidden" id="bestOfDots" aria-hidden="true">
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+          </div>
+          <div class="cps-counter hidden" id="cpsLiveCounter">0</div>
+          <h1 class="pad-title" id="padTitle">⚡ Tap Anywhere to Start</h1>
+          <p class="pad-subtitle" id="padSubtitle">First tap starts a 5.0-second sprint. Tap as fast as possible!</p>
+        </div>
+
+        <div class="pad-footer-row">
+          <span class="pad-hint" id="padHint">Tap rapidly with 1 or 2 fingers</span>
+        </div>
+      </div>
+
+      <div class="pad-result-view hidden" id="padResultView">
+        <div class="rank-badge" id="rankBadge">🏆 TOP 8% • SWEATY PVPER</div>
+        <div class="score-display" id="scoreDisplay">10.4 CPS</div>
+        <p class="score-comparison" id="scoreComparisonText">52 total hits in 5.0 seconds!</p>
+        <span class="retry-prompt" id="retryPrompt">↻ Tap here to try again</span>
+      </div>
+    </div>
+
+    <!-- 1-Step Viral Duel Link & Share Card -->
+    <section class="share-card" id="shareCard" aria-label="Challenge and Share">
+      <div class="input-wrapper">
+        <label class="sr-only" for="playerNameInput">Your Name or Gamer Tag</label>
+        <input type="text" id="playerNameInput" class="player-name-input" maxlength="20" autocomplete="nickname"
+          placeholder="Your Name / Gamer Tag (e.g. Alex)" />
+      </div>
+
+      <button type="button" class="btn-whatsapp" id="whatsappDuelBtn">
+        <span>⚔️ Challenge a Friend on WhatsApp</span>
+      </button>
+
+      <div class="secondary-btn-row is-3">
+        <button type="button" class="btn-secondary" id="copyDuelLinkBtn">
+          <span>📋 Copy Link</span>
+        </button>
+        <button type="button" class="btn-secondary" id="downloadCardBtn">
+          <span>📸 9:16 PNG</span>
+        </button>
+        <button type="button" class="btn-secondary" id="nativeShareBtn">
+          <span>📤 Share Card</span>
+        </button>
+      </div>
+
+      <p class="share-feedback hidden" id="shareFeedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Below-the-Fold AdSense Slots, 800+ Words CPS Editorial Guide & 6 FAQs -->
+  <div class="below-fold-hub">
+    <aside class="ad-wrapper ad-leaderboard-wrap" id="ad-slot-leaderboard" data-ad-status="pending"
+      aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-leaderboard-box">
+        <span class="ad-placeholder">Google AdSense Responsive Leaderboard (728×90 / 320×100)</span>
+      </div>
+    </aside>
+
+    <article class="editorial-article">
+      <section class="editorial-section">
+        <span class="eyebrow">CPS PERFORMANCE BENCHMARKS</span>
+        <h2>Complete Clicks Per Second (CPS) Guide: 1s, 5s &amp; 10s Speed Tiers</h2>
+        <p>
+          Clicks Per Second (CPS) measures how many intentional pointer actuations your hand or thumb delivers within a
+          fixed countdown window. Unlike raw visual reaction speed, CPS evaluates rapid motor alternation, finger tendon
+          endurance, and mouse or touchscreen debounce responsiveness.
+        </p>
+        <p>
+          ReflexDuel computes CPS cleanly on zero-delay <code>pointerdown</code> events synchronized with high-precision
+          <code>performance.now()</code> frames. Choose the <strong>1-second sprint</strong> to test pure explosive
+          bursts,
+          the standard <strong>5-second challenge</strong> to duel friends on WhatsApp or Discord, or the demanding
+          <strong>10-second marathon</strong> to identify grip fatigue before queued PvP matches.
+        </p>
+
+        <div class="table-container">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>Clicking Method</th>
+                <th>Typical CPS Range</th>
+                <th>Best Duration</th>
+                <th>Competitive Use Case</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Regular Single-Finger</strong></td>
+                <td class="mono">5.5 – 8.0 CPS</td>
+                <td>5s / 10s</td>
+                <td>FPS Semi-Auto &amp; MOBAs</td>
+              </tr>
+              <tr>
+                <td><strong>Jitter Clicking</strong></td>
+                <td class="mono amber">10.0 – 14.5 CPS</td>
+                <td>5s Burst</td>
+                <td>Old-School PotPvP &amp; BedWars</td>
+              </tr>
+              <tr>
+                <td><strong>Butterfly Clicking</strong></td>
+                <td class="mono emerald">12.5 – 20.0+ CPS</td>
+                <td>1s / 5s / 10s</td>
+                <td>Minecraft Bridging &amp; Ranked Duels</td>
+              </tr>
+              <tr>
+                <td><strong>Mobile Two-Thumb</strong></td>
+                <td class="mono emerald">9.5 – 15.0 CPS</td>
+                <td>1s / 5s</td>
+                <td>Mobile Rhythm &amp; Touch Brawl</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 14px;">
+          Most competitive desktop players start around 6.5 CPS using ordinary single-index clicking, where each full
+          down-and-up finger stroke occupies roughly 150 milliseconds. Switching to a disciplined two-finger butterfly
+          cadence cuts the load on each tendon in half, enabling sustained 12.0+ CPS bursts while preserving crosshair
+          control. Meanwhile, players testing on 120Hz flagship smartphones frequently discover that alternating two
+          hovering thumbs on glass beats bulky membrane trackpads by 3 to 5 CPS due to zero spring travel distance.
+        </p>
+      </section>
+
+      <section class="editorial-section">
+        <span class="eyebrow">SWITCH HARDWARE &amp; DEBOUNCE SCIENCE</span>
+        <h2>Why Mouse Polling Rate, Switch Travel &amp; Debounce Delay Cap Your CPS</h2>
+        <p>
+          Even lightning-fast finger movement hits an artificial ceiling if your input hardware filters rapid switch
+          bounces aggressively. Inside traditional mechanical micro-switches, metallic leaf contacts vibrate microscopically
+          for a few milliseconds after each impact. To prevent unintentional double-clicks during office work, budget mice
+          apply a strict <strong>18 ms to 30 ms firmware debounce window</strong>, dropping legitimate fast clicks
+          whenever you surpass roughly 11 CPS cleanly.
+        </p>
+        <p>
+          Modern esports gaming mice using optical switches or tunable firmware allow lowering debounce delay down to
+          <strong>2 ms to 4 ms</strong> alongside true <strong>1000Hz to 4000Hz USB polling</strong>. Combined with
+          ReflexDuel's non-blocking <code>pointerdown</code> listener and <code>touch-action: none</code> viewport lock,
+          every actuation registers cleanly inside the same animation frame without waiting for browser click synthesis or
+          button release delay. Run 1-second bursts to measure peak neuromuscular firing speed, then switch to 10-second
+          endurance sets to expose whether forearm tension stalls your rhythm after five seconds.
+        </p>
+      </section>
+
+      <aside class="ad-wrapper ad-rectangle-wrap" id="ad-slot-rectangle" data-ad-status="pending"
+        aria-label="Advertisement">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-box ad-rectangle-box">
+          <span class="ad-placeholder">Google AdSense In-Article Rectangle (336×280 / 300×250)</span>
+        </div>
+      </aside>
+
+      <section class="editorial-section">
+        <span class="eyebrow">TECHNIQUE MASTERY</span>
+        <h2>How to Increase Mouse &amp; Mobile CPS Safely Without Wrist Fatigue</h2>
+        <p>
+          Forcing raw speed with a locked wrist quickly causes forearm soreness and inconsistent click spacing. Elite
+          clickers maximize mechanical efficiency by pairing loose grip posture with lightweight switches tuned for fast
+          rebound height.
+        </p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Loose Butterfly Cadence</h3>
+            <p>
+              Rest both index and middle fingertips gently near the front lip of the left mouse button. Alternate
+              downward
+              taps smoothly so each finger lets the micro-switch spring reset completely before the opposite stroke
+              lands.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Pre-Tension Elimination</h3>
+            <p>
+              Avoid hammering the bottom housing on every tap. Minimal actuation depth reduces finger travel distance by
+              over
+              half, lifting sustainable 10-second CPS averages dramatically.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Lower Debounce Latency</h3>
+            <p>
+              If your gaming mouse software exposes debounce settings, stepping down from 12 ms to 4 ms eliminates
+              dropped
+              rebound clicks during intense 1s and 5s sprints without sacrificing everyday desktop reliability.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Short Warm-Up Intervals</h3>
+            <p>
+              Always stretch your wrists and cycle two 5-second bursts instead of endless grinding. When you smash a new
+              PB,
+              export the 1080×1920 QR Story card to lock your benchmark with friends.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section faq-section" aria-labelledby="cpsFaqHeading">
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 id="cpsFaqHeading">CPS Speed Test FAQ</h2>
+        <div class="faq-list">
+          <details class="faq-details">
+            <summary>What is the average CPS score on a 5-second click speed test?</summary>
+            <p>
+              Everyday computer users typically click between 5.5 and 7.0 times per second. Competitive gamers
+              practicing
+              butterfly or jitter techniques regularly cross 10 to 16 CPS across a 5-second run.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Which CPS technique gives the highest score without cheating?</summary>
+            <p>
+              Butterfly clicking offers the cleanest balance of high 13–20 CPS speed and steady cursor aim, whereas
+              jitter
+              clicking reaches 10–14 CPS using vibrating forearm tension.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Should I train on 1s, 5s, or 10s CPS durations?</summary>
+            <p>
+              Use 1s bursts for raw peak velocity, 5s sprints for ranked friend duels via <code>?duel=</code> links, and
+              10s
+              sets to catch endurance fade past the five-second mark.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Why do mobile two-thumb bursts beat laptop trackpads?</summary>
+            <p>
+              Phones register capacitive touch immediately on light skin contact via <code>pointerdown</code> with zero
+              physical key-travel delay, whereas laptop trackpads have stiffer tactile snap domes.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>How does mouse debounce time impact rapid CPS tests?</summary>
+            <p>
+              High factory debounce (16–25 ms) discards legitimate ultra-fast secondary clicks. Low-debounce optical or
+              tuned mechanical switches register crisp back-to-back butterfly inputs cleanly.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Can rapid CPS bursts strain tendons if overdone?</summary>
+            <p>
+              Yes—stop immediately if you feel forearm cramping or tingling, take generous rest breaks between runs, and
+              prioritize relaxed alternation over forceful mashing.
+            </p>
+          </details>
+        </div>
+      </section>
+    </article>
+
+    <section class="silo-links-card" aria-label="More Reflex &amp; Speed Arenas">
+      <h3>More Zero-Lag Speed Arenas</h3>
+      <div class="silo-grid">
+        <a href="./" class="silo-pill-link">
+          <strong>⚡ Reaction Time Test</strong>
+          <span>1-Tap, Best of 5 &amp; Sound Reflex</span>
+        </a>
+        <a href="cps-test.html" class="silo-pill-link is-current">
+          <strong>🖱️ CPS Speed Test</strong>
+          <span>1s, 5s &amp; 10s Click Burst Timer</span>
+        </a>
+        <a href="spacebar-test.html" class="silo-pill-link">
+          <strong>⌨️ Spacebar Counter</strong>
+          <span>5s &amp; 10s Keyboard Smash Test</span>
+        </a>
+        <a href="aim-reflex.html" class="silo-pill-link">
+          <strong>🎯 Aim Reflex Trainer</strong>
+          <span>10-Target Moving Dot Reaction</span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="ad-wrapper ad-multiplex-wrap" id="ad-slot-multiplex" data-ad-status="pending"
+      aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-multiplex-box">
+        <span class="ad-placeholder">Google AdSense Multiplex Recommendation Unit</span>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-brand-row">
+        <strong>ReflexDuel ⚡</strong>
+        <span>Global Millisecond Reaction Time &amp; CPS Challenge Arena</span>
+      </div>
+      <nav class="footer-nav" aria-label="Legal and Compliance">
+        <button type="button" class="footer-link-btn" data-legal-open="privacy">Privacy Policy</button>
+        <button type="button" class="footer-link-btn" data-legal-open="terms">Terms of Use</button>
+        <button type="button" class="footer-link-btn" data-legal-open="disclaimer">Disclaimer</button>
+        <button type="button" class="footer-link-btn" data-legal-open="contact">Contact / Report Abuse</button>
+      </nav>
+      <p class="footer-copy">© 2026 ReflexDuel. Client-side zero-backend arena.</p>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop hidden" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="legalModalTitle">Legal, Privacy &amp; Compliance</h2>
+        <button type="button" class="modal-close-btn" id="legalModalClose" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-tab-bar" role="tablist">
+        <button type="button" class="modal-tab-btn is-active" data-legal-tab="privacy" role="tab"
+          aria-selected="true">Privacy Policy</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="terms" role="tab" aria-selected="false">Terms of
+          Use</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="disclaimer" role="tab"
+          aria-selected="false">Disclaimer</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="contact" role="tab" aria-selected="false">Contact /
+          Report Abuse</button>
+      </div>
+      <div class="modal-content" id="legalModalBody"></div>
+    </div>
+  </div>
+
+  <div class="consent-banner hidden" id="consentBanner" role="region" aria-label="Cookie and Ad Consent">
+    <p class="consent-text">
+      ReflexDuel stores scores locally. Allow anonymized analytics &amp; AdSense cookies to keep this arena free.
+    </p>
+    <div class="consent-actions">
+      <button type="button" class="consent-btn consent-btn-reject" id="consentRejectBtn">Essential Only</button>
+      <button type="button" class="consent-btn consent-btn-accept" id="consentAcceptBtn">Accept All</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

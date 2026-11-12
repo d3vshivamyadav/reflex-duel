@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="S7rZ92XMf3c_kQliI7A_g4i2APwAkF-cC-5eMh1wmI8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MPF56DFZ"></script>
+  <meta name="google-adsense-account" content="ca-pub-0000000000000000" />
+
+  <title>Aim Reflex Trainer 🎯 — 10-Target Flick Reaction Speed Test | ReflexDuel</title>
+  <meta name="description"
+    content="Train mouse flick accuracy and touchscreen precision with the zero-lag 10-target Aim Reflex test. Track average ms per hit and challenge FPS teammates via 1v1 duel links." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B0D10" />
+  <link rel="canonical" href="https://reflexduel.vercel.app/aim-reflex" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ReflexDuel" />
+  <meta property="og:url" content="https://reflexduel.vercel.app/aim-reflex" />
+  <meta property="og:title" content="ReflexDuel Aim Trainer 🎯 — Beat My Target Flick Speed" />
+  <meta property="og:description"
+    content="Clear 10 randomized glowing emerald targets in milliseconds. Zero backend, instant 1v1 duel URLs and 9:16 QR Story cards." />
+  <meta property="og:image" content="https://reflexduel.vercel.app/assets/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReflexDuel Aim Reflex Trainer 🎯" />
+  <meta name="twitter:description"
+    content="Measure combined hand-eye coordination + flick reaction speed in milliseconds per target." />
+  <meta name="twitter:image" content="https://reflexduel.vercel.app/assets/og-preview.png" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ReflexDuel Aim Reflex Trainer",
+    "url": "https://reflexduel.vercel.app/aim-reflex",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript and HTML5",
+    "description": "10-target moving emerald orb trainer measuring combined visual recognition, cursor flick travel, and zero-lag click reaction in milliseconds per target.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good average time per target in the Aim Reflex Trainer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Average browser players score 430 to 550 ms per target. FPS competitors consistently clock 275 to 340 ms per target, while top Valorant or CS2 flick aimers dip below 275 ms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are Aim Reflex scores higher than the 1-Tap Reaction Time Test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 1-Tap test only requires pressing an already-positioned finger (~180–230 ms), whereas Aim Reflex combines visual scanning, physical cursor or finger travel, deceleration, and precise target acquisition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does disabling Windows Enhance Pointer Precision improve aim speed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Disabling OS pointer acceleration builds deterministic 1:1 muscle memory so consistent mouse swipe distances always land cleanly on small circular targets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I prioritize zero misses or raw speed first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prioritize smooth accuracy cleanly inside target centers first. Uncontrolled overshooting wastes 150–300 ms correcting cursor trajectory before the next click."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can touchscreens use the Aim Reflex trainer accurately?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Each orb locks pointerdown without scrolling the page, turning it into a fast eye-hand touch coordination drill for mobile FPS and rhythm players."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can teammates compete on Aim Reflex times?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once 10 targets are cleared, copy your ?duel= URL or WhatsApp invite directly below the pad to challenge squadmates on the exact average ms per hit benchmark."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body data-default-mode="aim">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPF56DFZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <main class="main-stage" id="mainStage">
+    <header class="site-header">
+      <a href="./" class="brand-logo" id="brandResetLink" aria-label="ReflexDuel Home Reset">
+        <img src="assets/favicon.svg" alt="" width="24" height="24" class="brand-icon" />
+        <span class="brand-wordmark">ReflexDuel<span class="brand-bolt" aria-hidden="true">⚡</span></span>
+      </a>
+      <div class="social-proof-badge" aria-live="off">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span id="streakBadgeText">🔥 0d Streak • 0 Today</span>
+      </div>
+    </header>
+
+    <div class="challenge-banner hidden" id="challengeBanner" role="status" aria-live="polite"></div>
+
+    <nav class="mode-switcher is-3" role="tablist" aria-label="Aim Arena Modes">
+      <button type="button" class="mode-tab is-active" role="tab" aria-selected="true" data-mode="aim">
+        <span aria-hidden="true">🎯</span>
+        <span>Aim Reflex</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabReflex" role="tab" aria-selected="false" data-mode="reflex">
+        <span aria-hidden="true">⚡</span>
+        <span>Reaction (ms)</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabCps" role="tab" aria-selected="false" data-mode="cps">
+        <span aria-hidden="true">🖱️</span>
+        <span>CPS Burst</span>
+      </button>
+    </nav>
+
+    <div class="subbar-row" id="subbarRow">
+      <div class="variant-pills" id="variantPills" role="group" aria-label="Aim Mode Variant"></div>
+      <div class="history-strip" id="historyStrip" aria-label="Recent Attempts"></div>
+      <button type="button" class="sfx-toggle-btn is-on" id="sfxToggleBtn" aria-pressed="true"
+        title="Toggle Web Audio sound effects">
+        <span aria-hidden="true">🔊</span>
+        <span>SFX On</span>
+      </button>
+    </div>
+
+    <div class="arena-pad state-idle" id="arenaPad" role="button" tabindex="0"
+      aria-label="Interactive Aim Reflex Target Trainer Pad. Tap anywhere to start.">
+      <div class="ripple-layer" id="rippleLayer" aria-hidden="true"></div>
+      <div class="pad-aura" aria-hidden="true"></div>
+
+      <div class="pad-live-view" id="padLiveView">
+        <div class="pad-meta-row" id="padMetaRow">
+          <span class="meta-pill" id="padModePill">AIM REFLEX • 10 HITS</span>
+          <span class="meta-pill meta-pill-pb hidden" id="padPbPill">PB: --</span>
+        </div>
+
+        <div class="pad-hero-center">
+          <div class="best-of-dots hidden" id="bestOfDots" aria-hidden="true">
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+          </div>
+          <div class="cps-counter hidden" id="cpsLiveCounter">0</div>
+          <h1 class="pad-title" id="padTitle">🎯 Tap Anywhere to Start</h1>
+          <p class="pad-subtitle" id="padSubtitle">Strike 10 glowing emerald targets in sequence to score average
+            ms/hit.</p>
+        </div>
+
+        <div class="pad-footer-row">
+          <span class="pad-hint" id="padHint">Mouse or direct touchscreen taps only</span>
+        </div>
+      </div>
+
+      <div class="pad-result-view hidden" id="padResultView">
+        <div class="rank-badge" id="rankBadge">🏆 TOP 5% • IMMORTAL AIM TIER</div>
+        <div class="score-display" id="scoreDisplay">312 ms</div>
+        <p class="score-comparison" id="scoreComparisonText">10 targets cleared (0 misses) • Avg 312 ms/hit</p>
+        <span class="retry-prompt" id="retryPrompt">↻ Tap here to try again</span>
+      </div>
+    </div>
+
+    <section class="share-card" id="shareCard" aria-label="Challenge and Share">
+      <div class="input-wrapper">
+        <label class="sr-only" for="playerNameInput">Your Name or Gamer Tag</label>
+        <input type="text" id="playerNameInput" class="player-name-input" maxlength="20" autocomplete="nickname"
+          placeholder="Your Name / Gamer Tag (e.g. Alex)" />
+      </div>
+
+      <button type="button" class="btn-whatsapp" id="whatsappDuelBtn">
+        <span>⚔️ Challenge a Friend on WhatsApp</span>
+      </button>
+
+      <div class="secondary-btn-row is-3">
+        <button type="button" class="btn-secondary" id="copyDuelLinkBtn">
+          <span>📋 Copy Link</span>
+        </button>
+        <button type="button" class="btn-secondary" id="downloadCardBtn">
+          <span>📸 9:16 PNG</span>
+        </button>
+        <button type="button" class="btn-secondary" id="nativeShareBtn">
+          <span>📤 Share Card</span>
+        </button>
+      </div>
+
+      <p class="share-feedback hidden" id="shareFeedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <div class="below-fold-hub">
+    <aside class="ad-wrapper ad-leaderboard-wrap" id="ad-slot-leaderboard" data-ad-status="pending"
+      aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-leaderboard-box">
+        <span class="ad-placeholder">Google AdSense Responsive Leaderboard (728×90 / 320×100)</span>
+      </div>
+    </aside>
+
+    <article class="editorial-article">
+      <section class="editorial-section">
+        <span class="eyebrow">VISUOMOTOR FLICK BENCHMARKS</span>
+        <h2>Aim Reflex Speed Guide: Measuring Hand-Eye Flick Timing in Valorant &amp; CS2</h2>
+        <p>
+          Raw visual reaction time shows how rapidly your optic nerve fires when a whole pad changes color, yet real FPS
+          duels require <strong>visuomotor target acquisition</strong>: spotting a suddenly appearing silhouette,
+          flicking
+          your crosshair or thumb smoothly across distance, stopping precisely on center mass, and actuating cleanly
+          before a misclick wastes time.
+        </p>
+        <p>
+          ReflexDuel's 10-target Aim Reflex mode spawns high-contrast glowing emerald targets across randomized
+          non-overlapping
+          coordinates inside <code>#arenaPad</code>. Because every orb enforces a minimum travel vector and measures
+          per-target split
+          deltas inside <code>requestAnimationFrame</code>, your final millisecond average exposes true mechanical
+          warm-up
+          readiness without bulky desktop downloads.
+        </p>
+
+        <div class="table-container">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>FPS / Touch Rank</th>
+                <th>Avg ms / Target</th>
+                <th>Target Accuracy</th>
+                <th>Global Percentile Tier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Radiant / FaceIt Lvl 10</strong></td>
+                <td class="mono emerald">&lt; 275 ms</td>
+                <td>95% – 100%</td>
+                <td>Top 1% Worldwide</td>
+              </tr>
+              <tr>
+                <td><strong>Immortal / Global Elite</strong></td>
+                <td class="mono amber">275 – 340 ms</td>
+                <td>90% – 95%</td>
+                <td>Top 5% Worldwide</td>
+              </tr>
+              <tr>
+                <td><strong>Ranked Diamond / Plat</strong></td>
+                <td class="mono">341 – 430 ms</td>
+                <td>85% – 92%</td>
+                <td>Top 22% Worldwide</td>
+              </tr>
+              <tr>
+                <td><strong>Casual / Touch Warm-Up</strong></td>
+                <td class="mono muted">431+ ms</td>
+                <td>Variable</td>
+                <td>Median Baseline</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 14px;">
+          Training flick velocity without accuracy builds sloppy habits that lose clutching gunfights. Notice how
+          experienced tactical shooter players break each target transition into two connected stages: a rapid ballistic
+          wrist or forearm swing covering 85–90% of the distance to the glowing orb, followed immediately by a subtle
+          fingertip micro-adjustment inside the target ring right as the visual cortex confirms alignment. Tracking both
+          total misses and average millisecond acquisition exposes exactly when you rush prematurely versus when smooth
+          deceleration lowers your true clearing average cleanly.
+        </p>
+      </section>
+
+      <section class="editorial-section">
+        <span class="eyebrow">CURSOR CALIBRATION &amp; SENSITIVITY</span>
+        <h2>DPI, Refresh Rate &amp; Input Delay Factors in Browser Aim Training</h2>
+        <p>
+          Two players with identical biological nerves often record a 40 ms gap on browser aim drills simply due to OS
+          pointer settings and display refresh rates. Running Chrome or Safari on a standard 60Hz office screen forces
+          each newly spawned target to wait up to 16.7 milliseconds before lighting up the next scanout frame, whereas a
+          144Hz or 240Hz gaming panel renders each emerging orb within 4.2 to 6.9 milliseconds—delivering sharper motion
+          tracking as your mouse glides between positions.
+        </p>
+        <p>
+          Likewise, setting your mouse between <strong>800 DPI and 1600 DPI</strong> with Windows Enhance Pointer
+          Precision
+          disabled keeps cursor motion strictly linear on desktop, eliminating variable speed curves during rapid
+          vertical
+          and diagonal snaps. On touchscreen phones and tablets, hovering your dominant thumb slightly outside the orb
+          spawn zone prevents your own finger silhouette from blocking peripheral vision when the next emerald target
+          flashes live inside the zero-scroll arena pad.
+        </p>
+      </section>
+
+      <aside class="ad-wrapper ad-rectangle-wrap" id="ad-slot-rectangle" data-ad-status="pending"
+        aria-label="Advertisement">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-box ad-rectangle-box">
+          <span class="ad-placeholder">Google AdSense In-Article Rectangle (336×280 / 300×250)</span>
+        </div>
+      </aside>
+
+      <section class="editorial-section">
+        <span class="eyebrow">MECHANICAL AIM DRILLS</span>
+        <h2>Four Zero-Cost Warm-Up Habits for Cleaner Flick Consistency</h2>
+        <p>
+          Dropping your per-target average from 420 ms down toward 290 ms happens fastest when you remove unpredictable
+          OS
+          cursor interference and train smooth micro-corrections alongside disciplined timing.
+        </p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>1:1 Raw Pointer Input</h3>
+            <p>
+              Disable Windows Enhanced Pointer Precision so cursor movement maps proportionally to physical mouse
+              distance
+              every single flick, locking muscle memory permanently.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Two-Phase Flick &amp; Confirm</h3>
+            <p>
+              Drive fast with your arm or wrist 90% of the way to the glowing orb, then execute a clean fingertip
+              deceleration
+              before pressing—eliminating miss penalties completely.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Lightweight Skate Glide</h3>
+            <p>
+              Wipe dust off PTFE mouse skates and cloth desk pads weekly. Lowering static starting friction makes tiny
+              horizontal and vertical target adjustments effortless.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Pre-Queue 3-Set Routine</h3>
+            <p>
+              Play 5 rounds of 1-Tap Reaction Time followed by two 10-target Aim sprints before ranked matches, then
+              drop
+              your QR Story PNG or <code>?duel=</code> link into squad Discord.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section faq-section" aria-labelledby="aimFaqHeading">
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 id="aimFaqHeading">Aim Reflex Trainer FAQ</h2>
+        <div class="faq-list">
+          <details class="faq-details">
+            <summary>What is considered a pro Aim Reflex average in ms?</summary>
+            <p>
+              Clearing 10 spaced targets below 275 ms average per orb represents Radiant Top 1% mechanical precision,
+              while
+              275–340 ms tracks competitive FPS starter readiness.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Why is my Aim time ~120 ms slower than plain Reaction Time?</summary>
+            <p>
+              Plain reaction tests need zero hand displacement. Aim Reflex sums visual detection plus cursor trajectory
+              travel,
+              stopping deceleration, and precision target click timing.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Should I turn off mouse acceleration in OS settings?</summary>
+            <p>
+              Yes—disabling pointer acceleration creates uniform spatial distances across all flick speeds, tightening
+              both
+              consistency and target-to-target average times.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>How do misses affect the Aim Reflex run?</summary>
+            <p>
+              Clicking outside the target counts toward your tracked miss tally and plays a gentle fault cue without
+              ending
+              the run, spotlighting whether rushing speed hurts precision.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Does Aim Reflex work cleanly on iPhone and Android touchscreens?</summary>
+            <p>
+              Yes. Each glowing 50px orb uses zero-delay touch capture with scrolling locked on <code>#arenaPad</code>
+              so rapid mobile
+              thumb drills stay effortless.
+            </p>
+          </details>
+          <details class="faq-details">
+            <summary>Can I share an Aim Reflex 1v1 challenge link directly with my duo?</summary>
+            <p>
+              Yes—click WhatsApp Duel, Copy Link, or Save 9:16 PNG with embedded QR code to dare your teammates to beat
+              your
+              average ms per hit!
+            </p>
+          </details>
+        </div>
+      </section>
+    </article>
+
+    <section class="silo-links-card" aria-label="More Reflex &amp; Speed Arenas">
+      <h3>More Zero-Lag Speed Arenas</h3>
+      <div class="silo-grid">
+        <a href="./" class="silo-pill-link">
+          <strong>⚡ Reaction Time Test</strong>
+          <span>1-Tap, Best of 5 &amp; Sound Reflex</span>
+        </a>
+        <a href="cps-test.html" class="silo-pill-link">
+          <strong>🖱️ CPS Speed Test</strong>
+          <span>1s, 5s &amp; 10s Click Burst Timer</span>
+        </a>
+        <a href="spacebar-test.html" class="silo-pill-link">
+          <strong>⌨️ Spacebar Counter</strong>
+          <span>5s &amp; 10s Keyboard Smash Test</span>
+        </a>
+        <a href="aim-reflex.html" class="silo-pill-link is-current">
+          <strong>🎯 Aim Reflex Trainer</strong>
+          <span>10-Target Moving Dot Reaction</span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="ad-wrapper ad-multiplex-wrap" id="ad-slot-multiplex" data-ad-status="pending"
+      aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-multiplex-box">
+        <span class="ad-placeholder">Google AdSense Multiplex Recommendation Unit</span>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-brand-row">
+        <strong>ReflexDuel ⚡</strong>
+        <span>Global Millisecond Reaction Time &amp; CPS Challenge Arena</span>
+      </div>
+      <nav class="footer-nav" aria-label="Legal and Compliance">
+        <button type="button" class="footer-link-btn" data-legal-open="privacy">Privacy Policy</button>
+        <button type="button" class="footer-link-btn" data-legal-open="terms">Terms of Use</button>
+        <button type="button" class="footer-link-btn" data-legal-open="disclaimer">Disclaimer</button>
+        <button type="button" class="footer-link-btn" data-legal-open="contact">Contact / Report Abuse</button>
+      </nav>
+      <p class="footer-copy">© 2026 ReflexDuel. Client-side zero-backend arena.</p>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop hidden" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="legalModalTitle">Legal, Privacy &amp; Compliance</h2>
+        <button type="button" class="modal-close-btn" id="legalModalClose" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-tab-bar" role="tablist">
+        <button type="button" class="modal-tab-btn is-active" data-legal-tab="privacy" role="tab"
+          aria-selected="true">Privacy Policy</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="terms" role="tab" aria-selected="false">Terms of
+          Use</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="disclaimer" role="tab"
+          aria-selected="false">Disclaimer</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="contact" role="tab" aria-selected="false">Contact /
+          Report Abuse</button>
+      </div>
+      <div class="modal-content" id="legalModalBody"></div>
+    </div>
+  </div>
+
+  <div class="consent-banner hidden" id="consentBanner" role="region" aria-label="Cookie and Ad Consent">
+    <p class="consent-text">
+      ReflexDuel stores scores locally. Allow anonymized analytics &amp; AdSense cookies to keep this arena free.
+    </p>
+    <div class="consent-actions">
+      <button type="button" class="consent-btn consent-btn-reject" id="consentRejectBtn">Essential Only</button>
+      <button type="button" class="consent-btn consent-btn-accept" id="consentAcceptBtn">Accept All</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

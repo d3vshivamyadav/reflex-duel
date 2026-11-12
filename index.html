@@ -6,13 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <!-- Google Tag Manager (GTM) & GA4 DataLayer -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MPF56DFZ"></script>
+  <!-- Google Consent Mode v2 Default (GDPR / AdSense Compliance) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
     gtag('js', new Date());
   </script>
+
+  <!-- Google Tag Manager (GTM) & GA4 DataLayer -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MPF56DFZ"></script>
 
   <!-- Google AdSense Verification Meta -->
   <meta name="google-adsense-account" content="ca-pub-0000000000000000">
@@ -138,7 +147,7 @@
   </script>
 </head>
 
-<body>
+<body data-default-mode="reflex">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPF56DFZ" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -155,27 +164,45 @@
       </a>
       <div class="social-proof-badge" aria-live="off">
         <span class="pulse-dot" aria-hidden="true"></span>
-        <span>🌎 24,810+ Duels Today</span>
+        <span id="streakBadgeText">🔥 0-Day Streak • 0 Runs</span>
       </div>
     </header>
 
     <!-- Friend Challenge Banner (Hidden until ?duel= link opened) -->
     <div class="challenge-banner hidden" id="challengeBanner" role="status" aria-live="polite"></div>
 
-    <!-- Simple 2-Tab Mode Switcher -->
-    <nav class="mode-switcher" role="tablist" aria-label="Game Modes">
+    <!-- 3-Tab Mode Switcher -->
+    <nav class="mode-switcher is-3" role="tablist" aria-label="Game Modes">
       <button type="button" class="mode-tab is-active" id="tabReflex" role="tab" aria-selected="true"
         data-mode="reflex">
         <span aria-hidden="true">⚡</span>
-        <span>Reaction Time (ms)</span>
+        <span>Reaction (ms)</span>
       </button>
       <button type="button" class="mode-tab" id="tabCps" role="tab" aria-selected="false" data-mode="cps">
         <span aria-hidden="true">🖱️</span>
-        <span>5-Second CPS Burst</span>
+        <span>CPS Burst</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabSound" role="tab" aria-selected="false" data-mode="sound">
+        <span aria-hidden="true">🔊</span>
+        <span>Sound Reflex</span>
       </button>
     </nav>
 
-    <!-- Giant Interactive Arena Pad (290px rounded-3xl, touch-action locked) -->
+    <!-- Compact Mode Variant, Recent Splits & Web Audio Controls -->
+    <div class="subbar-row" id="subbarRow">
+      <div class="variant-pills" id="variantPills" role="group" aria-label="Mode Variant">
+        <button type="button" class="variant-pill is-active" data-variant="1">1-Tap</button>
+        <button type="button" class="variant-pill" data-variant="5">Best of 5</button>
+      </div>
+      <div class="history-strip" id="historyStrip" aria-label="Recent Attempts"></div>
+      <button type="button" class="sfx-toggle-btn is-on" id="sfxToggleBtn" aria-pressed="true"
+        title="Toggle Web Audio sound effects">
+        <span aria-hidden="true">🔊</span>
+        <span>SFX On</span>
+      </button>
+    </div>
+
+    <!-- Giant Interactive Arena Pad (rounded-3xl, touch-action locked) -->
     <div class="arena-pad state-idle" id="arenaPad" role="button" tabindex="0"
       aria-label="Interactive Reaction Time and Click Speed Pad. Tap anywhere to start.">
       <div class="ripple-layer" id="rippleLayer" aria-hidden="true"></div>
@@ -189,6 +216,13 @@
         </div>
 
         <div class="pad-hero-center">
+          <div class="best-of-dots hidden" id="bestOfDots" aria-hidden="true">
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+            <span class="bo5-dot"></span>
+          </div>
           <div class="cps-counter hidden" id="cpsLiveCounter">0</div>
           <h1 class="pad-title" id="padTitle">⚡ Tap Anywhere to Start</h1>
           <p class="pad-subtitle" id="padSubtitle">Tap when the red pad flashes bright emerald green.</p>
@@ -220,12 +254,15 @@
         <span>⚔️ Challenge a Friend on WhatsApp</span>
       </button>
 
-      <div class="secondary-btn-row">
+      <div class="secondary-btn-row is-3">
         <button type="button" class="btn-secondary" id="copyDuelLinkBtn">
-          <span>📋 Copy Duel Link</span>
+          <span>📋 Copy Link</span>
         </button>
         <button type="button" class="btn-secondary" id="downloadCardBtn">
-          <span>📸 Save Score Card (9:16 PNG)</span>
+          <span>📸 9:16 PNG</span>
+        </button>
+        <button type="button" class="btn-secondary" id="nativeShareBtn">
+          <span>📤 Share Card</span>
         </button>
       </div>
 
@@ -236,7 +273,8 @@
   <!-- Below-the-Fold AdSense Slots, 800+ Words SEO Editorial Guide & 6 FAQs -->
   <div class="below-fold-hub">
     <!-- Ad Slot 1: Responsive Leaderboard (Minimum 36px safe margin below game stage) -->
-    <aside class="ad-wrapper ad-leaderboard-wrap" id="ad-slot-leaderboard" aria-label="Advertisement">
+    <aside class="ad-wrapper ad-leaderboard-wrap" id="ad-slot-leaderboard" data-ad-status="pending"
+      aria-label="Advertisement">
       <span class="ad-label">Advertisement</span>
       <div class="ad-box ad-leaderboard-box">
         <!-- Insert Google AdSense Responsive Leaderboard (<ins class="adsbygoogle">) here -->
@@ -342,7 +380,8 @@
       </section>
 
       <!-- Ad Slot 2: In-Article Rectangle -->
-      <aside class="ad-wrapper ad-rectangle-wrap" id="ad-slot-rectangle" aria-label="Advertisement">
+      <aside class="ad-wrapper ad-rectangle-wrap" id="ad-slot-rectangle" data-ad-status="pending"
+        aria-label="Advertisement">
         <span class="ad-label">Advertisement</span>
         <div class="ad-box ad-rectangle-box">
           <!-- Insert Google AdSense In-Article Rectangle (336×280 / 300×250) here -->
@@ -463,8 +502,32 @@
       </section>
     </article>
 
+    <!-- Below-Fold Internal Navigation to Dedicated Challenge Arenas -->
+    <section class="silo-links-card" aria-label="More Reflex & Speed Arenas">
+      <h3>More Zero-Lag Speed Arenas</h3>
+      <div class="silo-grid">
+        <a href="./" class="silo-pill-link is-current">
+          <strong>⚡ Reaction Time Test</strong>
+          <span>1-Tap, Best of 5 &amp; Sound Reflex</span>
+        </a>
+        <a href="cps-test.html" class="silo-pill-link">
+          <strong>🖱️ CPS Speed Test</strong>
+          <span>1s, 5s &amp; 10s Click Burst Timer</span>
+        </a>
+        <a href="spacebar-test.html" class="silo-pill-link">
+          <strong>⌨️ Spacebar Counter</strong>
+          <span>5s &amp; 10s Keyboard Smash Test</span>
+        </a>
+        <a href="aim-reflex.html" class="silo-pill-link">
+          <strong>🎯 Aim Reflex Trainer</strong>
+          <span>10-Target Moving Dot Reaction</span>
+        </a>
+      </div>
+    </section>
+
     <!-- Ad Slot 3: Multiplex Above Footer -->
-    <aside class="ad-wrapper ad-multiplex-wrap" id="ad-slot-multiplex" aria-label="Advertisement">
+    <aside class="ad-wrapper ad-multiplex-wrap" id="ad-slot-multiplex" data-ad-status="pending"
+      aria-label="Advertisement">
       <span class="ad-label">Advertisement</span>
       <div class="ad-box ad-multiplex-box">
         <!-- Insert Google AdSense Multiplex Ad Unit (<ins class="adsbygoogle">) here -->
@@ -506,6 +569,17 @@
           Report Abuse</button>
       </div>
       <div class="modal-content" id="legalModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Google Consent Mode v2 Banner -->
+  <div class="consent-banner hidden" id="consentBanner" role="region" aria-label="Cookie and Ad Consent">
+    <p class="consent-text">
+      ReflexDuel stores scores locally. Allow anonymized analytics &amp; AdSense cookies to keep this arena free.
+    </p>
+    <div class="consent-actions">
+      <button type="button" class="consent-btn consent-btn-reject" id="consentRejectBtn">Essential Only</button>
+      <button type="button" class="consent-btn consent-btn-accept" id="consentAcceptBtn">Accept All</button>
     </div>
   </div>
 

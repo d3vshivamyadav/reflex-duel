@@ -895,7 +895,7 @@
     // Required Footer Callout
     ctx.fillStyle = '#10B981';
     ctx.font = '700 34px "Space Grotesk", system-ui, sans-serif';
-    ctx.fillText('Test your reflex at reflex-duel.vercel.app', W / 2, 1650);
+    ctx.fillText('Test your reflex at reflexduel.vercel.app', W / 2, 1650);
 
     ctx.fillStyle = '#64748B';
     ctx.font = '500 24px "JetBrains Mono", monospace';
@@ -1035,7 +1035,7 @@
     `,
     terms: `
       <h3>Terms of Use</h3>
-      <p>By accessing ReflexDuel (<code>reflex-duel.vercel.app</code>), you agree to use this web application solely for personal reflex training, lawful entertainment, and friendly challenges.</p>
+      <p>By accessing ReflexDuel (<code>reflexduel.vercel.app</code>), you agree to use this web application solely for personal reflex training, lawful entertainment, and friendly challenges.</p>
       <ul>
         <li><strong>Fair Play:</strong> Duel links are client-side challenge tokens intended for honest competition. Using auto-clickers, macros, or automated scripts undermines fair play.</li>
         <li><strong>As-Is Provision:</strong> ReflexDuel is provided on an "as-is" and "as-available" basis without guarantees of uninterrupted uptime or hardware-level calibration.</li>
@@ -1049,7 +1049,7 @@
     `,
     contact: `
       <h3>Contact &amp; Report Abuse</h3>
-      <p>Need to report a misleading duel link, browser timing issue, or privacy/AdSense concern? Send a message directly using the form below or email <code>support@reflex-duel.vercel.app</code>.</p>
+      <p>Need to report a misleading duel link, browser timing issue, or privacy/AdSense concern? Send a message directly using the form below or email <code>support@reflexduel.vercel.app</code>.</p>
       <form class="report-form" id="reportAbuseForm">
         <input type="text" class="report-input" id="reportSubject" maxlength="80" required placeholder="Subject (e.g. Bug Report / Abuse / Ad Feedback)" />
         <textarea class="report-textarea" id="reportDetails" maxlength="600" required placeholder="Describe the issue, device/browser, or duel URL..."></textarea>
@@ -1065,7 +1065,7 @@
       e.preventDefault();
       const subject = document.getElementById('reportSubject').value.trim() || 'ReflexDuel Inquiry';
       const body = document.getElementById('reportDetails').value.trim();
-      const mailto = `mailto:support@reflex-duel.vercel.app?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailto = `mailto:support@reflexduel.vercel.app?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
     });
   }
@@ -1114,7 +1114,7 @@
   function registerServiceWorker() {
     if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.protocol === 'http:')) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(() => {});
+        navigator.serviceWorker.register('./sw.js').catch(() => { });
       });
     }
   }

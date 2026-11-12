@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <rect x="2" y="6" width="36" height="36" rx="10" fill="#14181F" stroke="#222936" stroke-width="1.5"/>
+  <path d="M23 12L11 26h8.5L17 36l12-14h-8.5L23 12z" fill="#10B981"/>
+  <text x="48" y="32" fill="#F8FAFC" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.5">ReflexDuel</text>
+</svg>
+

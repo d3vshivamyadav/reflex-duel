@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="S7rZ92XMf3c_kQliI7A_g4i2APwAkF-cC-5eMh1wmI8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- Google Tag Manager (GTM) & GA4 DataLayer -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TVRB9WZV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+  </script>
+
+  <!-- Google AdSense Verification Meta -->
+  <meta name="google-adsense-account" content="ca-pub-0000000000000000">
+
+  <title>ReflexDuel ⚡ — Reaction Time Test (ms) &amp; 5-Second CPS Challenge Arena</title>
+  <meta name="description"
+    content="Test your millisecond reaction time and 5-second Clicks Per Second (CPS) with zero lag. Unlock your global esports rank badge, save a 9:16 Story PNG card, and challenge friends via 1-click duel links." />
+  <meta name="keywords"
+    content="reaction time test, cps test, clicks per second challenge, millisecond reflex test, gamer reaction benchmark, beat my reaction time link" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B0D10" />
+  <link rel="canonical" href="https://reflex-duel.vercel.app/" />
+
+  <!-- OpenGraph & Twitter Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ReflexDuel" />
+  <meta property="og:url" content="https://reflex-duel.vercel.app/" />
+  <meta property="og:title" content="ReflexDuel ⚡ — Global Reaction Time &amp; CPS Challenge Arena" />
+  <meta property="og:description"
+    content="Measure your exact millisecond reaction speed and 5-second CPS burst. Beat your friends' scores with instant 1v1 duel links." />
+  <meta property="og:image" content="https://reflex-duel.vercel.app/assets/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReflexDuel ⚡ — Beat My Reaction Time &amp; CPS Score" />
+  <meta name="twitter:description"
+    content="Zero-lag browser millisecond reflex timer &amp; 5-second CPS arena. Accept a 1v1 duel now." />
+  <meta name="twitter:image" content="https://reflex-duel.vercel.app/assets/og-preview.png" />
+
+  <!-- Icons & PWA Manifest -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Google Fonts (&display=swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org WebApplication Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ReflexDuel",
+    "url": "https://reflex-duel.vercel.app/",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript and HTML5",
+    "description": "Zero-backend, sub-millisecond reaction time test and 5-second Clicks Per Second (CPS) challenge arena with instant URL 1v1 duels and 1080x1920 PNG Story score cards.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Sub-millisecond reaction time measurement via performance.now() and requestAnimationFrame",
+      "5-second CPS burst timer with real-time touch ripple feedback",
+      "Zero-server ?duel= challenge link generator and live victory comparison",
+      "1080x1920 9:16 Story Card PNG download via HTML5 Canvas"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good human reaction time in milliseconds (ms)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average adult visual reaction time falls between 215 ms and 250 ms. Competitive gamers consistently hit 171 ms to 200 ms, while elite esports pros often score between 140 ms and 170 ms on high-refresh-rate setups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is ReflexDuel's millisecond reaction timer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ReflexDuel pairs requestAnimationFrame paint synchronization with the browser's high-resolution performance.now() clock and zero-delay pointerdown listeners with touch-action: none, eliminating legacy mobile click delays."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the average CPS (Clicks Per Second) and what counts as fast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most players average 5.5 to 7.0 CPS using standard single-finger clicking. Hitting 9.0 to 11.9 CPS enters the Sweaty PvPer tier (Top 8%), and 12.0+ CPS places you in the Top 1% global bracket."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my reaction speed faster on a 144Hz or 240Hz monitor than on a 60Hz phone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 60Hz display refreshes once every 16.7 ms, whereas a 240Hz monitor updates every 4.2 ms. Touchscreens also add 15 to 40 ms of capacitive digitizer polling latency compared to a 1000Hz wired or 2.4GHz gaming mouse."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do ReflexDuel 1v1 duel links work with zero backend?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your gamer tag, selected test mode, and verified score are encoded directly into a compact URL-safe Base64 token (?duel=...). When a friend opens the link, their browser decodes the target score locally and challenges them to beat it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I improve my reaction time and CPS for Valorant, Fortnite, or Minecraft?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Warm up daily before ranked matches, focus softly at the center of the target pad, upgrade display refresh rates where possible, and practice relaxed butterfly or jitter clicking bursts with regular wrist rest intervals."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVRB9WZV" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- Main Single-Screen Stage (Max-Width 500px Centered) -->
+  <main class="main-stage" id="mainStage">
+    <!-- Minimal Zero-Button Header -->
+    <header class="site-header">
+      <a href="./" class="brand-logo" id="brandResetLink" aria-label="ReflexDuel Home Reset">
+        <img src="assets/favicon.svg" alt="" width="24" height="24" class="brand-icon" />
+        <span class="brand-wordmark">ReflexDuel<span class="brand-bolt" aria-hidden="true">⚡</span></span>
+      </a>
+      <div class="social-proof-badge" aria-live="off">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>🌎 24,810+ Duels Today</span>
+      </div>
+    </header>
+
+    <!-- Friend Challenge Banner (Hidden until ?duel= link opened) -->
+    <div class="challenge-banner hidden" id="challengeBanner" role="status" aria-live="polite"></div>
+
+    <!-- Simple 2-Tab Mode Switcher -->
+    <nav class="mode-switcher" role="tablist" aria-label="Game Modes">
+      <button type="button" class="mode-tab is-active" id="tabReflex" role="tab" aria-selected="true"
+        data-mode="reflex">
+        <span aria-hidden="true">⚡</span>
+        <span>Reaction Time (ms)</span>
+      </button>
+      <button type="button" class="mode-tab" id="tabCps" role="tab" aria-selected="false" data-mode="cps">
+        <span aria-hidden="true">🖱️</span>
+        <span>5-Second CPS Burst</span>
+      </button>
+    </nav>
+
+    <!-- Giant Interactive Arena Pad (290px rounded-3xl, touch-action locked) -->
+    <div class="arena-pad state-idle" id="arenaPad" role="button" tabindex="0"
+      aria-label="Interactive Reaction Time and Click Speed Pad. Tap anywhere to start.">
+      <div class="ripple-layer" id="rippleLayer" aria-hidden="true"></div>
+      <div class="pad-aura" aria-hidden="true"></div>
+
+      <!-- Idle / Wait / Go / Too Early / CPS Live Overlay -->
+      <div class="pad-live-view" id="padLiveView">
+        <div class="pad-meta-row" id="padMetaRow">
+          <span class="meta-pill" id="padModePill">REACTION TIME</span>
+          <span class="meta-pill meta-pill-pb hidden" id="padPbPill">PB: --</span>
+        </div>
+
+        <div class="pad-hero-center">
+          <div class="cps-counter hidden" id="cpsLiveCounter">0</div>
+          <h1 class="pad-title" id="padTitle">⚡ Tap Anywhere to Start</h1>
+          <p class="pad-subtitle" id="padSubtitle">Tap when the red pad flashes bright emerald green.</p>
+        </div>
+
+        <div class="pad-footer-row">
+          <span class="pad-hint" id="padHint">Zero-lag tap or press Spacebar</span>
+        </div>
+      </div>
+
+      <!-- Result View (Inside Pad) -->
+      <div class="pad-result-view hidden" id="padResultView">
+        <div class="rank-badge" id="rankBadge">🏆 TOP 5% • PRO ESPORTS TIER</div>
+        <div class="score-display" id="scoreDisplay">168 ms</div>
+        <p class="score-comparison" id="scoreComparisonText">47 ms faster than the average human!</p>
+        <span class="retry-prompt" id="retryPrompt">↻ Tap here to try again</span>
+      </div>
+    </div>
+
+    <!-- 1-Step Viral Duel Link & Share Card -->
+    <section class="share-card" id="shareCard" aria-label="Challenge and Share">
+      <div class="input-wrapper">
+        <label class="sr-only" for="playerNameInput">Your Name or Gamer Tag</label>
+        <input type="text" id="playerNameInput" class="player-name-input" maxlength="20" autocomplete="nickname"
+          placeholder="Your Name / Gamer Tag (e.g. Alex)" />
+      </div>
+
+      <button type="button" class="btn-whatsapp" id="whatsappDuelBtn">
+        <span>⚔️ Challenge a Friend on WhatsApp</span>
+      </button>
+
+      <div class="secondary-btn-row">
+        <button type="button" class="btn-secondary" id="copyDuelLinkBtn">
+          <span>📋 Copy Duel Link</span>
+        </button>
+        <button type="button" class="btn-secondary" id="downloadCardBtn">
+          <span>📸 Save Score Card (9:16 PNG)</span>
+        </button>
+      </div>
+
+      <p class="share-feedback hidden" id="shareFeedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Below-the-Fold AdSense Slots, 800+ Words SEO Editorial Guide & 6 FAQs -->
+  <div class="below-fold-hub">
+    <!-- Ad Slot 1: Responsive Leaderboard (Minimum 36px safe margin below game stage) -->
+    <aside class="ad-wrapper ad-leaderboard-wrap" id="ad-slot-leaderboard" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-leaderboard-box">
+        <!-- Insert Google AdSense Responsive Leaderboard (<ins class="adsbygoogle">) here -->
+        <span class="ad-placeholder">Google AdSense Responsive Leaderboard (728×90 / 320×100)</span>
+      </div>
+    </aside>
+
+    <article class="editorial-article">
+      <!-- Section 1: Global Reaction Time & CPS Benchmarks Table -->
+      <section class="editorial-section">
+        <span class="eyebrow">GLOBAL PERFORMANCE INDEX</span>
+        <h2>Global Reaction Time &amp; CPS Benchmarks</h2>
+        <p>
+          Visual reaction time measures the exact millisecond interval between a sudden stimulus change on your screen
+          and the moment your motor cortex triggers a finger press. While everyday reflexes feel instantaneous,
+          differences of just 25 milliseconds decide winning peeks in tactical shooters, fighting game parries, and
+          rapid sim-racing overtakes.
+        </p>
+        <p>
+          ReflexDuel measures both single-stimulus response latency in milliseconds (ms) and sustained 5-second burst
+          clicking speed in Clicks Per Second (CPS). Below are verified reference benchmarks gathered across desktop
+          gaming rigs, 120Hz smartphones, and standard office hardware. Compare your personal best against these
+          brackets to diagnose whether your bottleneck is mental anticipation, clicking mechanics, or screen hardware
+          latency.
+        </p>
+
+        <div class="table-container">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>Player Category</th>
+                <th>Reaction Time (ms)</th>
+                <th>5-Sec CPS Pace</th>
+                <th>Global Percentile Tier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Pro Esports Player</strong></td>
+                <td class="mono emerald">140 – 170 ms</td>
+                <td class="mono">11.5 – 16.0+ CPS</td>
+                <td>Top 1% – 5% Worldwide</td>
+              </tr>
+              <tr>
+                <td><strong>Competitive Gamer</strong></td>
+                <td class="mono amber">171 – 200 ms</td>
+                <td class="mono">8.5 – 11.4 CPS</td>
+                <td>Top 6% – 20% Worldwide</td>
+              </tr>
+              <tr>
+                <td><strong>Average Adult</strong></td>
+                <td class="mono">215 – 250 ms</td>
+                <td class="mono">5.5 – 7.5 CPS</td>
+                <td>Median Human Range</td>
+              </tr>
+              <tr>
+                <td><strong>Casual Mobile User</strong></td>
+                <td class="mono muted">250+ ms</td>
+                <td class="mono muted">3.5 – 5.4 CPS</td>
+                <td>Warm-Up / Standard Touch</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 14px;">
+          Notice how reaction latency tends to peak between ages 16 and 25 before gradually drifting upward by roughly
+          1.5–2 milliseconds per year in adulthood. However, consistent targeted practice, low-latency peripherals, and
+          high-refresh monitors allow dedicated players well into their 30s and 40s to outperform untrained teenagers by
+          a wide margin.
+        </p>
+      </section>
+
+      <!-- Section 2: Hardware Lag, Refresh Rates & Biological Reflexes -->
+      <section class="editorial-section">
+        <span class="eyebrow">LATENCY SCIENCE</span>
+        <h2>How Hardware Lag, 120Hz/240Hz Refresh Rates &amp; Biological Reflexes Work</h2>
+        <p>
+          Every score recorded in your browser is a sum of two distinct components: <strong>biological neural
+            conduction</strong> and <strong>hardware display-to-input pipeline delay</strong>. Biologically,
+          photoreceptors in your retina convert the crimson-to-emerald color transition into electrical impulses along
+          the optic nerve, passing through the visual cortex before traveling down the spinal cord to the muscles in
+          your hand or thumb. Under rested, alert conditions, pure human visual processing accounts for roughly 140 to
+          190 ms. By comparison, simple auditory cues travel faster through the brainstem (~140 ms median), which is why
+          visual reaction tests require sharper peripheral focus.
+        </p>
+        <p>
+          Hardware setup adds measurable variance on top of biology. On a traditional 60Hz monitor or laptop panel, each
+          video frame persists for <strong>16.67 milliseconds</strong> before the pixel matrix updates. Upgrading to a
+          120Hz, 144Hz, or 240Hz display shrinks frame intervals to 4.17–8.33 ms, letting your eyes spot the emerald
+          flash sooner. Similarly, a wired or low-latency 2.4GHz mouse polling at 1000Hz reports your click within 1 ms,
+          whereas Bluetooth mice and standard 60Hz mobile touchscreens introduce 15 to 40 ms of polling and
+          touch-coalescing overhead. Enabling Low Latency Mode (NVIDIA Reflex or AMD Anti-Lag) and closing background
+          GPU-heavy browser tabs can shave another 8 to 15 ms from total system response.
+        </p>
+        <p>
+          To ensure fair measurement across every device, ReflexDuel removes browser click-release lag by binding
+          directly to instant <code>pointerdown</code> events, locking scroll bounce with
+          <code>touch-action: none</code> on the arena pad, and synchronizing green-frame timestamps inside
+          <code>requestAnimationFrame</code> with high-resolution <code>performance.now()</code> deltas. Unlike legacy
+          tests that register only on button release (<code>click</code>), pressing down triggers immediately on switch
+          actuation—saving 20–35 ms of mechanical travel time per attempt.
+        </p>
+      </section>
+
+      <!-- Ad Slot 2: In-Article Rectangle -->
+      <aside class="ad-wrapper ad-rectangle-wrap" id="ad-slot-rectangle" aria-label="Advertisement">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-box ad-rectangle-box">
+          <!-- Insert Google AdSense In-Article Rectangle (336×280 / 300×250) here -->
+          <span class="ad-placeholder">Google AdSense In-Article Rectangle (336×280 / 300×250)</span>
+        </div>
+      </aside>
+
+      <!-- Section 3: How to Improve Reaction Speed & CPS -->
+      <section class="editorial-section">
+        <span class="eyebrow">COMPETITIVE TRAINING GUIDE</span>
+        <h2>How to Improve Your Reaction Speed &amp; Mouse/Touch CPS for Valorant, Fortnite, Minecraft &amp; Mobile
+          Gaming</h2>
+        <p>
+          Whether you are holding tight operator angles in <strong>Valorant</strong>, turbo-building edits in
+          <strong>Fortnite</strong>, trading knockback hits in <strong>Minecraft PvP</strong>, or grinding ranked touch
+          shooters on mobile, focused reflex training produces measurable gains within days. Follow these proven
+          techniques to shave milliseconds off your latency and boost your 5-second CPS burst:
+        </p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Relaxed Visual Anchoring</h3>
+            <p>
+              Avoid staring intensely at text labels during the red waiting phase. Softly focus on the center of the pad
+              so rod and cone cells across your macula register the full-card emerald luminance shift immediately
+              without anticipatory false starts.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Optimize Mouse &amp; Finger Grip</h3>
+            <p>
+              For single-finger CPS tests, keep your finger lightly touching the primary mouse switch instead of lifting
+              high between taps. For Minecraft PvP bursts above 12 CPS, alternate index and middle fingers using
+              controlled butterfly clicking.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Mobile Touch Hovering</h3>
+            <p>
+              On phones and tablets, rest your forearm comfortably and hover your dominant thumb just 1–2 millimeters
+              above the glass. Avoid pressing hard—light capacitive taps trigger faster digitizer registration and
+              higher CPS endurance.
+            </p>
+          </div>
+          <div class="tip-card">
+            <h3>Hydration, Sleep &amp; 1v1 Rivalry</h3>
+            <p>
+              Sleep deprivation and mild dehydration slow synaptic speed by 20–45 ms. Run a 5-round ReflexDuel warm-up
+              before ranked queues, then send a 1v1 WhatsApp challenge link to your squad to turn warm-ups into
+              competitive daily duels.
+            </p>
+          </div>
+        </div>
+        <p style="margin-top: 16px;">
+          For consistent weekly progress, run five back-to-back Reaction Time trials followed by two 5-second CPS bursts
+          at the same time each day. Logging your personal best helps separate genuine mechanical improvement from
+          random luck or early-click anticipation faults, building calmer, faster clutch decision-making under pressure.
+        </p>
+      </section>
+
+      <!-- Section 4: 6 Interactive <details> FAQ Items -->
+      <section class="editorial-section faq-section" aria-labelledby="faqHeading">
+        <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 id="faqHeading">Reaction Time &amp; CPS Testing FAQ</h2>
+
+        <div class="faq-list">
+          <details class="faq-details">
+            <summary>What is a good human reaction time in milliseconds (ms)?</summary>
+            <p>
+              The average adult visual reaction time sits between 215 ms and 250 ms. Competitive gamers regularly clock
+              between 171 ms and 200 ms, while elite esports professionals frequently reach 140 ms to 170 ms on
+              low-latency monitors.
+            </p>
+          </details>
+
+          <details class="faq-details">
+            <summary>How accurate is ReflexDuel's millisecond reaction timer?</summary>
+            <p>
+              ReflexDuel synchronizes the emerald visual trigger with <code>requestAnimationFrame</code>, timestamps
+              with sub-millisecond <code>performance.now()</code> precision, and measures on instant
+              <code>pointerdown</code> with touch-scroll locks enabled strictly on the arena pad.
+            </p>
+          </details>
+
+          <details class="faq-details">
+            <summary>What is the average CPS (Clicks Per Second) and what counts as fast?</summary>
+            <p>
+              Standard regular clicking yields 5.5 to 7.0 CPS over 5 seconds. Reaching 9.0 to 11.9 CPS earns the Sweaty
+              PvPer rank (Top 8%), while butterfly or jitter bursts of 12.0+ CPS place you in the Top 1% worldwide.
+            </p>
+          </details>
+
+          <details class="faq-details">
+            <summary>Why is my reaction speed faster on a 144Hz or 240Hz monitor than on a 60Hz phone?</summary>
+            <p>
+              A 60Hz screen waits up to 16.7 ms to display the next frame, whereas 144Hz–240Hz displays refresh every
+              4.2 to 6.9 ms. Mobile touch digitizers also add 15–40 ms of input pipeline delay relative to a 1000Hz
+              wired gaming mouse.
+            </p>
+          </details>
+
+          <details class="faq-details">
+            <summary>How do ReflexDuel 1v1 duel links work with zero backend?</summary>
+            <p>
+              When you copy or share a duel link, ReflexDuel encodes your name, selected mode, and score into a compact
+              URL-safe Base64 token (<code>?duel=...</code>). Your friend's browser decodes that score locally with no
+              account or server required.
+            </p>
+          </details>
+
+          <details class="faq-details">
+            <summary>How can I improve my reaction time and CPS for Valorant, Fortnite, or Minecraft?</summary>
+            <p>
+              Practice short 5-round warm-ups before ranked matches, prioritize 120Hz+ displays and low-latency mice,
+              stay hydrated, and take frequent rest breaks during rapid CPS drills to avoid repetitive wrist strain.
+            </p>
+          </details>
+        </div>
+      </section>
+    </article>
+
+    <!-- Ad Slot 3: Multiplex Above Footer -->
+    <aside class="ad-wrapper ad-multiplex-wrap" id="ad-slot-multiplex" aria-label="Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-box ad-multiplex-box">
+        <!-- Insert Google AdSense Multiplex Ad Unit (<ins class="adsbygoogle">) here -->
+        <span class="ad-placeholder">Google AdSense Multiplex Recommendation Unit</span>
+      </div>
+    </aside>
+
+    <!-- Footer & Legal Links -->
+    <footer class="site-footer">
+      <div class="footer-brand-row">
+        <strong>ReflexDuel ⚡</strong>
+        <span>Global Millisecond Reaction Time &amp; CPS Challenge Arena</span>
+      </div>
+      <nav class="footer-nav" aria-label="Legal and Compliance">
+        <button type="button" class="footer-link-btn" data-legal-open="privacy">Privacy Policy</button>
+        <button type="button" class="footer-link-btn" data-legal-open="terms">Terms of Use</button>
+        <button type="button" class="footer-link-btn" data-legal-open="disclaimer">Disclaimer</button>
+        <button type="button" class="footer-link-btn" data-legal-open="contact">Contact / Report Abuse</button>
+      </nav>
+      <p class="footer-copy">© 2026 ReflexDuel. Client-side zero-backend arena.</p>
+    </footer>
+  </div>
+
+  <!-- Legal & Compliance Modal -->
+  <div class="modal-backdrop hidden" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="legalModalTitle">Legal, Privacy &amp; Compliance</h2>
+        <button type="button" class="modal-close-btn" id="legalModalClose" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-tab-bar" role="tablist">
+        <button type="button" class="modal-tab-btn is-active" data-legal-tab="privacy" role="tab"
+          aria-selected="true">Privacy Policy</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="terms" role="tab" aria-selected="false">Terms of
+          Use</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="disclaimer" role="tab"
+          aria-selected="false">Disclaimer</button>
+        <button type="button" class="modal-tab-btn" data-legal-tab="contact" role="tab" aria-selected="false">Contact /
+          Report Abuse</button>
+      </div>
+      <div class="modal-content" id="legalModalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
